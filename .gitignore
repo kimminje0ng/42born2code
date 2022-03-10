@@ -1,5 +1,6 @@
 # 42
 .DS_Store
+.clang-format
 
 # Prerequisites
 *.d
