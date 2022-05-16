@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: minjeki2 <minjeki2@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/05/16 14:49:12 by minjeki2          #+#    #+#             */
+/*   Updated: 2022/05/16 14:49:13 by minjeki2         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 static int	get_int_len(long long n)
@@ -19,9 +31,9 @@ static int	get_int_len(long long n)
 
 char	*ft_itoa(int n)
 {
-	int				len;
-	long long		nbr;
-	char			*res;
+	int			len;
+	long long	nbr;
+	char		*res;
 
 	len = get_int_len(n);
 	nbr = (long long)n;

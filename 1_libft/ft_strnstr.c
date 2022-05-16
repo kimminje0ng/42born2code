@@ -1,9 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: minjeki2 <minjeki2@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/05/16 14:50:01 by minjeki2          #+#    #+#             */
+/*   Updated: 2022/05/16 14:50:02 by minjeki2         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 static int	find_match(const char *str, const char *substr, size_t len, int j)
 {
-	int		i;
-	int		len_sub;
+	int	i;
+	int	len_sub;
 
 	i = 0;
 	len_sub = 0;
