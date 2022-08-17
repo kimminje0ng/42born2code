@@ -6,7 +6,7 @@
 /*   By: minjeki2 <minjeki2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 14:38:14 by minjeki2          #+#    #+#             */
-/*   Updated: 2022/08/17 14:38:15 by minjeki2         ###   ########.fr       */
+/*   Updated: 2022/08/17 16:37:00 by minjeki2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,8 +94,8 @@ char	*read_file(int fd, char *res)
 
 char	*get_next_line(int fd)
 {
-	static char *buffer;
-	char *line;
+	static char	*buffer;
+	char	*line;
 
 	if (BUFFER_SIZE <= 0 || fd < 0 || read(fd, 0, 0) < 0)
 		return (NULL);

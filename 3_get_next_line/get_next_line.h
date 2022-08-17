@@ -6,7 +6,7 @@
 /*   By: minjeki2 <minjeki2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 14:38:17 by minjeki2          #+#    #+#             */
-/*   Updated: 2022/08/17 14:38:21 by minjeki2         ###   ########.fr       */
+/*   Updated: 2022/08/17 16:37:04 by minjeki2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,11 @@
 # include <unistd.h>
 
 char	*get_next_line(int fd);
+
+char	*read_file(int fd, char *res);
+char	*ft_line(char *buffer);
+char	*ft_next(char *buffer);
+char	*ft_free(char *buffer, char *buf);
 
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strchr(const char *string, int searchedChar);
